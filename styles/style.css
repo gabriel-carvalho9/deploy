@@ -13,6 +13,12 @@ body{
     margin-top: -20px;
     margin-left: -6px;
     margin-right: -6px;
+}   
+
+.header span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .footer {    
@@ -24,17 +30,27 @@ body{
     margin-bottom: -20px;
 }
 
-.container1{
+.container1 {
     display: flex;
     justify-content: center;
-    margin: auto;
+    padding: 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+    background-color: rgb(255, 220, 159);
+    border-radius: 10px;
+    border: 2px solid rgb(154, 93, 27);
     gap: 20px;
 }
 
-.container2{
+.container2 {
     display: flex;
     justify-content: center;
-    margin: auto;
+    padding: 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+    background-color: rgb(255, 220, 159);
+    border-radius: 10px;
+    border: 2px solid rgb(156, 94, 28);
     gap: 20px;
 }
 

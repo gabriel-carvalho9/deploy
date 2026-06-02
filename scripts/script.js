@@ -5,7 +5,11 @@ function fazerPedido (produto, preco) {
     totalPedidos++;
     faturamento += preco;
 
-    document.getElementById('contador').innerText = `Total de Pedidos: ${totalPedidos}`;
-    document.getElementById('faturamento').innerText = `Faturamento: R$${faturamento.toFixed(2)}`;
+    const contadorElement = document.getElementById('contador');
+    const faturamentoElement = document.getElementById('faturamento');
+
+    faturamentoElement.innerText = `Faturamento: R$${faturamento.toFixed(2)}`;
+    contadorElement.innerHTML = totalPedidos;
+    contadorElement.innerText = `Total de Pedidos: ${totalPedidos}`;
     console.log(`Pedido feito: ${produto} - Preço: R$${preco.toFixed(2)}`);
 }
